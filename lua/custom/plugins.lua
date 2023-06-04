@@ -1,4 +1,4 @@
-local overrides = require("custom.configs.overrides")
+local overrides = require "custom.configs.overrides"
 
 ---@type NvPluginSpec[]
 local plugins = {
@@ -25,7 +25,7 @@ local plugins = {
   -- override plugin configs
   {
     "williamboman/mason.nvim",
-    opts = overrides.mason
+    opts = overrides.mason,
   },
 
   {
@@ -46,7 +46,11 @@ local plugins = {
       require("better_escape").setup()
     end,
   },
-
+  -- {
+  --   "github/copilot.vim",
+  --   event = "InsertEnter",
+  --   opts = overrides.copilot
+  -- }
   -- To make a plugin not be loaded
   -- {
   --   "NvChad/nvim-colorizer.lua",

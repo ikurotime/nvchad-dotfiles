@@ -33,6 +33,7 @@ M.mason = {
     "typescript-language-server",
     "deno",
     "prettier",
+    "astro-language-server",
 
     -- c/cpp stuff
     "clangd",
@@ -55,5 +56,12 @@ M.nvimtree = {
     },
   },
 }
+
+--copilot
+-- M.copilot = {
+--   suggestion = {
+--     auto_trigger = true
+--   }
+-- }
 
 return M
